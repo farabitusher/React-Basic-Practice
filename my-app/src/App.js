@@ -2,6 +2,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Country from './components/Country/Country';
+import AllCountry from './components/AllCountry/AllCountry';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Country></Country>
       <Counter></Counter>
       <ExternalUsers></ExternalUsers>
+      <AllCountry></AllCountry>
     </div>
   );
 }
