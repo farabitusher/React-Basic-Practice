@@ -3,6 +3,7 @@ import CountryDetail from '../CountryDetails/CountryDetail';
 
 const AllCountry = () => {
     const [country,setCountry]=useState([]);
+     console.log(country);
    useEffect(()=>{
        fetch('https://restcountries.com/v3.1/all')
        .then(res=>res.json())
@@ -12,7 +13,10 @@ const AllCountry = () => {
     return (
         <div>
             {
-            country.map(name=><CountryDetail name={name.name.common}></CountryDetail>)
+            country.map(name=><CountryDetail
+                 name={name.name.common}
+                 img={name.flags.png}
+                 ></CountryDetail>)
             }
         </div>
     );
