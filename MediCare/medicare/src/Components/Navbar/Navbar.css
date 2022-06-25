@@ -1,0 +1,25 @@
+.nav-area{
+    background-color:#1F2937;
+    padding: 25px;
+    text-decoration: none;
+    list-style: none;
+     color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+
+}
+nav a{
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+} 
+nav a:hover{
+    background-color: #374151;
+}
+nav .active{
+    color:rgb(255, 208, 208);
+    background-color:rgb(1, 16, 48) ;
+}
